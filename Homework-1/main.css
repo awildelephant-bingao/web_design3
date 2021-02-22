@@ -1,8 +1,74 @@
+header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.biophoto{
+    width:150px;
+    float:left;
+    margin:10px;
+
+}
+.biophoto img{
+    max-width:100%;
+}
+.biotext{
+    width: 350px;
+    margin: 10px;
+}
+
+.biotext p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+.secondtext p{
+    font-family: 'Roboto', sans-serif;
+    margin:10px;
+    line-height: 30px;
+}
+
+.Footer-text p{
+    font-family: 'Roboto', sans-serif;
+    margin:10px;
+    line-height: 30px;
+}
+
+#contact-form {
+    margin-top:30px;
+    text-align: center;
+}
+
+#submitButton{
+    width:100px;
+    height:30px;
+    margin-top: 30px;
+}
+
+.footerButton {
+    text-align: center;
+    margin-bottom:50px;
+}
+
+#clickA {
+    width:100px;
+    height:30px;
+    margin-top: 30px;
+}
+.gallery {
+    max-width:1000px;
+    margin:10px;
+    margin-top:30px;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,auto);
     gap: 10px;
     list-style: none;
     padding-left:0px;
+}
+
+.grid-item img{
+    max-width: 100%;
 }
