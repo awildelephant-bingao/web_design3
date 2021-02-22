@@ -14,7 +14,7 @@ header {
 }
 .biotext{
     width: 350px;
-    margin: 10px;
+    margin:10px;
 }
 
 .biotext p {
@@ -23,19 +23,63 @@ header {
 }
 .secondtext p{
     font-family: 'Roboto', sans-serif;
-    margin:10px;
     line-height: 30px;
+    margin:10px;
 }
 
 .Footer-text p{
     font-family: 'Roboto', sans-serif;
-    margin:10px;
     line-height: 30px;
+
 }
 
 #contact-form {
     margin-top:30px;
     text-align: center;
+}
+
+.number{
+    position:relative;
+    top:-6px;
+    line-height:30px;
+    width:150px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size:16px;
+    color:black;
+}
+
+.name{
+    position:relative;
+    top:-6px;
+    line-height:30px;
+    width:150px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size:16px;
+    color:black;
+}
+
+.subject{
+    position:relative;
+    top:-6px;
+    line-height:30px;
+    width:150px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size:16px;
+    color:black;
+}
+
+.email{
+    position:relative;
+    top:-6px;
+    line-height:30px;
+    width:150px;
+    border-radius:6px;
+    padding:0 22px;
+    font-size:16px;
+    color:black;
 }
 
 #submitButton{
@@ -71,4 +115,72 @@ header {
 
 .grid-item img{
     max-width: 100%;
+}
+
+
+@media(min-width: 768px) {
+
+    header {
+        font-size: 30px;
+        margin-bottom:30px;
+    }
+
+    .biophoto{
+        width:200px;
+    
+    }
+    .biotext{
+        width: 100%;
+
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,auto);
+        gap: 10px;
+        list-style: none;
+        padding-left:0px;
+    }
+
+    #contact-form {
+
+        margin:auto;
+        max-width:1280px;
+        background-color:lightgrey;
+        padding-bottom:50px;
+        padding-top:10px;
+        margin-top:50px;
+
+    }
+
+    
+}
+
+
+@media(min-width: 1280px) {
+    header {
+        font-size: 50px;
+    }
+
+    .gallery{
+
+        margin: auto;
+        max-width:1280px;
+    }
+    .bio{
+        margin:auto;
+        max-width:1280px;
+        margin-bottom:50px;
+    }
+   .Footer-text{
+    margin:auto;
+    max-width:1280px;
+    margin-bottom:30px;
+    margin-top:30px;
+   }
+
+
+ 
+  
+
 }
