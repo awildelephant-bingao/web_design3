@@ -141,6 +141,18 @@ header {
         list-style: none;
         padding-left:0px;
     }
+    .name{
+        width:initial
+    }
+    .subject{
+     width:initial
+    }
+    .email{
+     width:initial
+    }
+    .number {
+     width:initial
+    }
 
     #contact-form {
 
@@ -178,6 +190,8 @@ header {
     margin-bottom:30px;
     margin-top:30px;
    }
+
+
 
 
  
