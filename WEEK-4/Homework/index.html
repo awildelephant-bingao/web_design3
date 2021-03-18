@@ -75,8 +75,14 @@
             text-align: left;
         }
 
-        background-image{
-            filter:grayscale(50%);
+        .background-image{
+            filter:grayscale(100%);
+            position: relative;
+        
+        }
+        .header-text{
+            position:absolute;
+            
         }
     </style>
 </head>
@@ -117,12 +123,14 @@
             </div>
         </nav>
 
-        <section class="py-5 text-xl-center container-fluid jumbotron"
-            style="background-image: url(https://cdn.wallpapersafari.com/44/43/xcXnCb.png)">
+        <section class="py-5 text-xl-center container-fluid jumbotron">
             <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">AWILDELEPHANT</h1>
-                    <p class="lead text-muted">What did the elephant do when he hurt his toe?
+                <div class="background-image">
+                    <img src="https://cdn.wallpapersafari.com/44/43/xcXnCb.png">
+                </div>
+                <div class="col-lg-6 col-md-8 mx-auto header-text">
+                    <h1 class="fw-light text-warning ">AWILDELEPHANT</h1>
+                    <p class="lead text-muted text-warning">What did the elephant do when he hurt his toe?
 
                         He called a tow truck!</p>
                     
@@ -130,20 +138,20 @@
             </div>
         </section>
     </header>
-    <br>
+
     <main class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-80">
+            <div class="col-12 col-md-6 col-lg-3 card h-80">
+            
                     <img src="Images/elephant-1.jpg">
                     <p class="card-title">A WILD ELEPHANT</p>
                     <p class="card-text h-50">Elephants are the largest existing land animals.</p>
                     <button type="button"
                         class="btn btn-secondary text-warning btn-sm btn-outline-secondary">View</button>
-                </div>
+            
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-80">
+            <div class="col-12 col-md-6 col-lg-3 card h-80">
+              
                     <img src="Images/elephant-2.jpg">
                     <p class="card-title">TWO WILD ELEPHANTS</p>
                     <p class="card-text h-50">Once common throughout Africa and Asia, elephants have declined
@@ -151,10 +159,10 @@
                         during the 20th century, largely due to the illegal ivory trade.</p>
                     <button type="button"
                         class="btn btn-secondary text-warning btn-sm btn-outline-secondary">View</button>
-                </div>
+                
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-80">
+            <div class="col-12 col-md-6 col-lg-3 card h-80">
+              
                     <img src="Images/elephant-3.jpg">
                     <p class="card-title">THREE WILD ELEPHANTS</p>
                     <p class="card-text h-50">Elephants are the largest land mammals on earth and have distinctly
@@ -162,20 +170,20 @@
                         bodies, large ears, and long trunks.</p>
                     <button type="button"
                         class="btn btn-secondary text-warning btn-sm btn-outline-secondary">View</button>
-                </div>
+                
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card h-80">
+            <div class="col-12 col-md-6 col-lg-3 card h-80">
+                
                     <img src="Images/elephant-4.jpg">
                     <p class="card-title">FOUR WILD ELEPHANTS</p>
                     <p class="card-text h-50">They use their trunks to pick up objects, trumpet warnings, greet other
                         elephants, or suck up water for drinking or bathing, among other uses. </p>
                     <button type="button"
                         class="btn btn-secondary text-warning btn-sm btn-outline-secondary">View</button>
-                </div>
+                
             </div>
         </div>
-        <br>
+        
         <div class="paragraph">
             <h2 class="header-elephant">
                 Elephant
