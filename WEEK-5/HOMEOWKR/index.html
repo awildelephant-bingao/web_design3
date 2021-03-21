@@ -172,8 +172,8 @@
 
             <h3>Billing</h3>
             <div class="form-check form-switch mb-3">
-                <input type="checkbox" name="billingAddress" id="billingAddress" class="form-check-input">
-                <label for="billingAddress" class="form-check-label">Same as shipping address</label>
+                <input type="checkbox" name="billingAgree" id="billingAgree" class="form-check-input">
+                <label for="billingAgree" class="form-check-label">Same as shipping address</label>
             </div>
             <fieldset>
                 <div class="mb-3">
@@ -231,6 +231,15 @@
         let uNinput = document.getElementById("userName");
         let shNinput = document.getElementById("shippingName");
 
+        let biNinput = document.getElementById("billingName");
+        let biAinput = document.getElementById("billingAddress")
+        let shAinput = document.getElementById("shippingAddress")
+        let shCinput = document.getElementById("shippingCity");
+        let biCinput = document.getElementById("billingCity");
+        let shZinput = document.getElementById("shippingZip");
+        let biZinput = document.getElementById("billingZip");
+        let billingCheck = document. getElementById("billingAgree");
+
         uNinput.addEventListener("blur", function(){
             if(this.value != ""){
                 shNinput.value = this.value;
@@ -239,7 +248,21 @@
                 alert("Please fill in your name!");
             }
             
-        })
+            
+        });
+
+       billingCheck.addEventListener("change",function(){
+           if(billingCheck.checked){
+                biNinput.value = shNinput.value;
+                biAinput.value = shAinput.value;
+                biCinput.value = shCinput.value;
+                biZinput.value = shZinput.value;
+                
+           }
+           else {
+
+           }
+       });
 
     </script>
   
