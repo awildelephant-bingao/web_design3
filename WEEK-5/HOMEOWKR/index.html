@@ -19,7 +19,6 @@
     <title>Forms and a bit of JS</title>
 
     <style>
-
         .navbar-brand img {
             max-width: 40px;
         }
@@ -32,184 +31,206 @@
         .btn {
             font-family: "Poppins", sans-serif;
         }
-         .background-image{
-            filter:grayscale(100%);
+
+        .background-image {
+            filter: grayscale(100%);
             position: relative;
-        
+
         }
-        .header-text{
-            position:absolute;
-            
+
+        .header-text {
+            position: absolute;
+
         }
+
+        .py-lg-5 {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+        }
+
+        .py-5 {
+            padding-top: 0rem !important;
+            padding-bottom: 2rem !important;
+        }
+
+        h2{
+            margin:10px;
+        }
+
+        h3{
+            margin:10px;
+        }
+
+    
     </style>
 </head>
 
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="Images/LOGO.png" alt="my-logo" class="img-fluid" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Elephant</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Doggy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kitty</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Birdy</a>
-                            </li>
-    
-                        </ul>
-    
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/LOGO.png" alt="my-logo" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Elephant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Doggy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kitty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Birdy</a>
+                        </li>
+
+                    </ul>
+
                 </div>
-            </nav>
-    
-            <section class="py-5 text-xl-center container-fluid jumbotron">
-                <div class="row py-lg-5">
-                    <div class="background-image">
-                        <img src="https://cdn.wallpapersafari.com/44/43/xcXnCb.png">
-                    </div>
-                    <div class="col-lg-6 col-md-8 mx-auto header-text">
-                        <h1 class="fw-light text-warning ">AWILDELEPHANT</h1>
-                        <p class="lead text-muted text-warning">WANT AN ELEPHANT? WHAT ARE YOU WAITING FOR?</p>
-                        
-                    </div>
+            </div>
+        </nav>
+
+        <section class="py-5 text-xl-center container-fluid jumbotron">
+            <div class="row py-lg-5">
+                <div class="background-image">
+                    <img src="https://cdn.wallpapersafari.com/44/43/xcXnCb.png">
                 </div>
-            </section>
-        
+                <div class="col-lg-6 col-md-8 mx-auto header-text">
+                    <h1 class="fw-light text-warning ">AWILDELEPHANT</h1>
+                    <p class="lead text-muted text-warning">WANT AN ELEPHANT? WHAT ARE YOU WAITING FOR?</p>
+
+                </div>
+            </div>
+        </section>
+
     </header>
     <main class="container">
         <div class="row">
             <div class="col">
-                <h2>checkout!</h2>
+                <h2>Checkout</h2>
                 <form action="" method="POST">
 
-                <fieldset>
-                    <div class="mb-3">
-                        <label for="userName">Your name</label>
-                        <input type="text" name="userName" class="form-control" id="userName" placeholder="Jenifer">
-                    </div>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="userName">Your name</label>
+                            <input type="text" name="userName" class="form-control" id="userName" placeholder="Jenifer">
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="userEmail">Your email address</label>
-                        <input type="email" name="userEmail" class="form-control" id="userEmail">
-                    </div>
+                        <div class="mb-3">
+                            <label for="userEmail">Your email address</label>
+                            <input type="email" name="userEmail" class="form-control" id="userEmail">
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="userPass">Password</label>
-                        <input type="password" name="userPass" class="form-control" id="userPass">
-                    </div>
+                        <div class="mb-3">
+                            <label for="userPass">Password</label>
+                            <input type="password" name="userPass" class="form-control" id="userPass">
+                        </div>
 
 
-                    <div class="mb-3">
-                        <label for="userLocation">Your location</label>
-                        <select class="form-select" name="userLocation" id="userLocation">
-                            <option value="la">Los Angeles</option>
-                            <option value="sd" selected>San Deigo</option>
-                            <option value="sf">San Francisco</option>
-                            <option value="sc">Sacramento</option>
+                        <div class="mb-3">
+                            <label for="userLocation">Your location</label>
+                            <select class="form-select" name="userLocation" id="userLocation">
+                                <option value="la">Los Angeles</option>
+                                <option value="sd" selected>San Deigo</option>
+                                <option value="sf">San Francisco</option>
+                                <option value="sc">Sacramento</option>
 
-                        </select>
-                    </div>
+                            </select>
+                        </div>
+                        <div class="form-check form-switch mb-3">
+                            <input type="checkbox" name="termsAgree" id="termsAgree" class="form-check-input">
+                            <label for="termsAgree" class="form-check-label">Agree to terms of service.</label>
+                        </div>
+
+                    </fieldset>
+                    <h3>Shipping</h3>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="shippingName">
+                                Recepient's Name
+                            </label>
+                            <input type="text" name="shippingName" id="shippingName" class="form-control">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="shippingAddress">
+                                Recepient's Address
+                            </label>
+                            <input type="text" name="shippingAddress" id="shippingAddress" class="form-control">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="shippingCity">
+                                Recepient's City
+                            </label>
+                            <input type="text" name="shippingCity" id="shippingCity" class="form-control">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="shippingZip">
+                                Zipe Code
+                            </label>
+                            <input type="text" name="shippingZip" id="shippingZip" class="form-control">
+
+                        </div>
+
+
+                    </fieldset>
+
+                    <h3>Billing</h3>
                     <div class="form-check form-switch mb-3">
-                        <input type="checkbox" name="termsAgree" id="termsAgree" class="form-check-input">
-                        <label for="termsAgree" class="form-check-label">Agree to terms of service.</label>
+                        <input type="checkbox" name="billingAgree" id="billingAgree" class="form-check-input">
+                        <label for="billingAgree" class="form-check-label">Same as shipping address</label>
                     </div>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="billingName">
+                                Recepient's Name
+                            </label>
+                            <input type="text" name="billingName" id="billingName" class="form-control">
 
-                </fieldset>
-                <h3>Shipping</h3>
-                <fieldset>
-                    <div class="mb-3">
-                        <label for="shippingName">
-                            Recepient's Name
-                        </label>
-                        <input type="text" name="shippingName" id="shippingName" class="form-control"> 
+                        </div>
 
-                    </div>
+                        <div class="mb-3">
+                            <label for="billingAddress">
+                                Recepient's Address
+                            </label>
+                            <input type="text" name="billingAddress" id="billingAddress" class="form-control">
 
-                    <div class="mb-3">
-                        <label for="shippingAddress">
-                            Recepient's Address
-                        </label>
-                        <input type="text" name="shippingAddress" id="shippingAddress" class="form-control"> 
+                        </div>
 
-                    </div>
+                        <div class="mb-3">
+                            <label for="billingCity">
+                                Recepient's City
+                            </label>
+                            <input type="text" name="billingCity" id="billingCity" class="form-control">
 
-                    <div class="mb-3">
-                        <label for="shippingCity">
-                            Recepient's City
-                        </label>
-                        <input type="text" name="shippingCity" id="shippingCity" class="form-control"> 
+                        </div>
 
-                    </div>
+                        <div class="mb-3">
+                            <label for="billingZip">
+                                Zipe Code
+                            </label>
+                            <input type="text" name="billingZip" id="billingZip" class="form-control">
 
-                    <div class="mb-3">
-                        <label for="shippingZip">
-                            Zipe Code
-                        </label>
-                        <input type="text" name="shippingZip" id="shippingZip" class="form-control"> 
+                        </div>
 
-                    </div>
 
-                    
-                </fieldset>
-
-            <h3>Billing</h3>
-            <div class="form-check form-switch mb-3">
-                <input type="checkbox" name="billingAgree" id="billingAgree" class="form-check-input">
-                <label for="billingAgree" class="form-check-label">Same as shipping address</label>
-            </div>
-            <fieldset>
-                <div class="mb-3">
-                    <label for="billingName">
-                        Recepient's Name
-                    </label>
-                    <input type="text" name="billingName" id="billingName" class="form-control"> 
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="billingAddress">
-                        Recepient's Address
-                    </label>
-                    <input type="text" name="billingAddress" id="billingAddress" class="form-control"> 
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="billingCity">
-                        Recepient's City
-                    </label>
-                    <input type="text" name="billingCity" id="billingCity" class="form-control"> 
-
-                </div>
-
-                <div class="mb-3">
-                    <label for="billingZip">
-                        Zipe Code
-                    </label>
-                    <input type="text" name="billingZip" id="billingZip" class="form-control"> 
-
-                </div>
-
-                
-            </fieldset>
+                    </fieldset>
                     <button type="submit" class="btn btn-warning">Submite</button>
 
                 </form>
@@ -226,7 +247,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
 
-   
+
     <script>
         let uNinput = document.getElementById("userName");
         let shNinput = document.getElementById("shippingName");
@@ -238,34 +259,31 @@
         let biCinput = document.getElementById("billingCity");
         let shZinput = document.getElementById("shippingZip");
         let biZinput = document.getElementById("billingZip");
-        let billingCheck = document. getElementById("billingAgree");
+        let billingCheck = document.getElementById("billingAgree");
 
-        uNinput.addEventListener("blur", function(){
-            if(this.value != ""){
+        uNinput.addEventListener("blur", function () {
+            if (this.value != "") {
                 shNinput.value = this.value;
-            }
-            else {
+            } else {
                 alert("Please fill in your name!");
             }
-            
-            
+
+
         });
 
-       billingCheck.addEventListener("change",function(){
-           if(billingCheck.checked){
+        billingCheck.addEventListener("change", function () {
+            if (billingCheck.checked) {
                 biNinput.value = shNinput.value;
                 biAinput.value = shAinput.value;
                 biCinput.value = shCinput.value;
                 biZinput.value = shZinput.value;
-                
-           }
-           else {
 
-           }
-       });
+            } else {
 
+            }
+        });
     </script>
-  
+
 </body>
 
 </html>
