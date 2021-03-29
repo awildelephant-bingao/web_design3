@@ -39,9 +39,12 @@
 
         }
 
+
         .header-text {
             position: absolute;
-
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
         }
 
         .py-lg-5 {
@@ -54,55 +57,54 @@
             padding-bottom: 2rem !important;
         }
 
-        h2{
-            margin:10px;
-            
+        h2 {
+            margin: 10px;
+
         }
 
-        h3{
-            margin:10px;
+        h3 {
+            margin: 10px;
         }
-        fieldset{
-            max-width:300px;
+
+        fieldset {
+            max-width: 300px;
             margin: auto;
         }
 
         .buttonLine {
-            max-width:300px;
+            max-width: 300px;
             margin: auto;
         }
 
-        button{
-           margin-top:20px;
-           margin-bottom:20px;
+        button {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        @media(min-width: 768px){
-            fieldset{
-            max-width:500px;
-            margin: auto;
+        @media(min-width: 768px) {
+            fieldset {
+                max-width: 500px;
+                margin: auto;
+            }
+
+            .buttonLine {
+                max-width: 500px;
+                margin: auto;
+            }
+
         }
 
-        .buttonLine {
-            max-width:500px;
-            margin: auto;
-        }
+        @media(min-width: 1200px) {
+            fieldset {
+                max-width: 768px;
+                margin: auto;
+            }
 
+            .buttonLine {
+                max-width: 768px;
+                margin: auto;
+            }
         }
-        @media(min-width: 1200px){
-            fieldset{
-            max-width:768px;
-            margin: auto;
-        }
-
-        .buttonLine {
-            max-width:768px;
-            margin: auto;
-        }
-        }
-   
-
-    
     </style>
 </head>
 
@@ -233,7 +235,7 @@
                     </fieldset>
 
                     <h3>Billing</h3>
-                    
+
                     <fieldset>
                         <div class="form-check form-switch mb-3">
                             <input type="checkbox" name="billingAgree" id="billingAgree" class="form-check-input">
@@ -274,8 +276,8 @@
 
                     </fieldset>
                     <div class="buttonLine">
-                    <button type="submit" class="btn btn-warning">Submite</button>
-                     </div>
+                        <button type="submit" class="btn btn-warning">Submite</button>
+                    </div>
 
                 </form>
             </div>

@@ -20,8 +20,11 @@
 
 .container {
     font-family: "Poppins", sans-serif;
+    margin-top: 25px;
+    max-width: 1200px;
 
 }
+
 
 .fw-light {
     font-family: "Oswald", sans-serif;
@@ -43,5 +46,30 @@
     font-family: "Poppins", sans-serif;
 }
 
+.GreenSausage{
+    max-width:100%;
+}
 
+.SpinashPasta{
+    max-width:100%;
+}
+
+.blog-post {
+    margin:18px;
+}
+
+
+.background-image {
+    position: relative;
+}
+
+.background-image img{
+    max-width: 100%;
+}
+.header-text{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:50%;
+}
 
