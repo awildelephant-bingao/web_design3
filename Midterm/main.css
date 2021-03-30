@@ -66,10 +66,66 @@
 .background-image img{
     max-width: 100%;
 }
-.header-text{
-    position:absolute;
-    left:50%;
+
+
+.header-text {
+    position: absolute;
+    left: 80%;
     transform: translateX(-50%);
-    top:50%;
+    top: 20%;}
+
+
+.col-md-7 {
+    margin-top:18px;
 }
 
+footer{
+    font-size:12px;
+}
+
+.mb-1 a{
+    font-size:15px;
+}
+
+
+
+
+
+
+
+@media(min-width: 768px){
+
+
+ footer{
+     margin-top:100px;
+     margin-bottom:20px;
+ }
+
+
+.product-p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-text {
+    position: absolute;
+    left: 73%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+}
+
+
+
+
+
+@media(min-width: 1200px){
+
+    .header-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;}
+};
