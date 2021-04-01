@@ -16,7 +16,21 @@
     max-width: 1200px;
 
 }
+ .content{
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 250px;
+    text-align: center;
+}
 
+.content-header{
+    margin: 10px;
+}
+ 
 
 .fw-light {
     font-family: "Oswald", sans-serif;
