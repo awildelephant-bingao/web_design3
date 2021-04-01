@@ -19,18 +19,40 @@
 
 <body>
 
-	<header class="mb-auto">
-		<div>
-			<h3 class="float-md-start display-1 text-center fw-bold mb-0">Green Sausage</h3>
-			<nav class="nav nav-masthead justify-content-center float-md-end">
-				<a class="nav-link sm-h5 text-dark fw-bold active" aria-current="page" href="Home.html">Home</a>
-				<a class="nav-link sm-h5 text-dark fw-bold" href="index.html">About</a>
-				<a class="nav-link sm-h5 text-dark fw-bold" href="Product.html">Product</a>
-				<a class="nav-link sm-h5 text-dark fw-bold" href="Team.html">Team</a>
-			</nav>
-		</div>
+	<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Home.html">
+                    <img src="Images/LOGO.png" alt="my-logo" class="img-fluid" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-	</header>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Team.html">Team</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
 
 	<div class="login-popup">
 		<div class="box">
@@ -41,7 +63,7 @@
 			</div>
 			<div class="form">
 				<div class="close">&times;</div>
-				<h1>Subscription</h1>
+				<h1>Green Sausage</h1>
 				<form>
 					<div class="form-group">
 						<input type="text" placeholder="Name" class="form-control">
@@ -67,6 +89,9 @@
 	</div>
 
 	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
