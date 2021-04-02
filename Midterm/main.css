@@ -25,12 +25,11 @@
     padding-bottom: 50px;
     margin-bottom: 250px;
     text-align: center;
+    max-height: 50px;
 }
 
 
-.content-header{
-    margin: 10px;
-}
+
  
 
 .fw-light {
