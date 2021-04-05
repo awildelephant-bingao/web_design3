@@ -33,7 +33,25 @@
 }
 
 
+.first-name{
+    width:40%;
+}
 
+.last-name{
+    width:40%;
+}
+
+.Email{
+    width:40%;
+}
+
+.position {
+    width:40%;
+}
+
+.phone-number{
+    width:40%;
+}
 
 
 .fw-light {
@@ -48,15 +66,21 @@
 
 main{
     margin-bottom:-30px;
+    padding-top: 82px;
 }
 
 .apply-btn {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 
+header{
+    position:fixed;
+    width:100%;
+    z-index:999;
 
+}
 
 
 
