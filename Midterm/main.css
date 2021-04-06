@@ -118,6 +118,12 @@ header{
 
 }
 
+.apply-btn-col {
+    margin-bottom: 30px;
+    margin-top: 9px;
+}
+
+
 .GreenSausage {
     max-width: 100%;
 }
@@ -220,6 +226,10 @@ footer {
 
 }
 
+.dividerline img {
+    margin-bottom:20px;
+}
+
 
 
 
@@ -237,7 +247,7 @@ footer {
 
 
     .product-p {
-        max-width: 500px;
+        max-width: 350px;
         margin-left: auto;
         margin-right: auto;
 
@@ -254,6 +264,7 @@ footer {
 
 
 
-@media(min-width: 1200px) {}
-
-;
+@media(min-width: 1200px) {
+.product-header-section {
+    margin-top: 32px;}
+}
