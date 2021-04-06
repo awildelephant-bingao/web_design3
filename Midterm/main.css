@@ -34,23 +34,23 @@
 
 
 .first-name{
-    width:40%;
+    width:45%;
 }
 
 .last-name{
-    width:40%;
+    width:45%;
 }
 
 .Email{
-    width:40%;
+    width:90%;
 }
 
 .position {
-    width:40%;
+    width:45%;
 }
 
-.phone-number{
-    width:40%;
+.Phone-number{
+    width:45%;
 }
 
 
@@ -70,7 +70,6 @@ main{
 }
 
 .apply-btn {
-    text-align: center;
     margin-top: 25px;
     width:100px;
     background-color: red;
@@ -87,9 +86,7 @@ main{
 
 }
 
-.apply-btn-col {
-    text-align: center;
-}
+
 
 header{
     position:fixed;
@@ -112,6 +109,13 @@ header{
 
 .btn {
     font-family: "Poppins", sans-serif;
+}
+
+.Application{
+    font-family: "Oswald", sans-serif;
+    margin-top:20px;
+    margin-bottom:30px;
+
 }
 
 .GreenSausage {
@@ -237,6 +241,10 @@ footer {
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    .Teamformcontainer{
+        padding-left:10%;
     }
 
 
