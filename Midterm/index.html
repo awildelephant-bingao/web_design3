@@ -234,17 +234,15 @@
     var myCarousel = document.querySelector('#myCarousel')
     var carousel = new bootstrap.Carousel(myCarousel, {
         interval: 2000,
-        wrap: false
+        wrap: true
     })
 
     console.log("here at 240");
     $('#playButton').click(function () {
-        console.log("play");
-        $('#carouselExampleIndicators').carousel.cycle ();
+       carousel.cycle ();
     });
     $('#pauseButton').click(function () {
-    console.log("pause");
-    $('#carouselExampleIndicators').carousel.pause ();
+    carousel.pause ();
     });
 </script>
 
