@@ -307,6 +307,11 @@ footer{
         margin-left: 100px;
         position: absolute;
         bottom: 0px;
+        z-index:200;
+    }
+
+    #carouselButtons button{
+        color:aquamarine;
     }
 
 
