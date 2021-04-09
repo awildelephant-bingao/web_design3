@@ -178,7 +178,7 @@
                         <p>You give a hundred reasons why, and you say you're really gonna try. Straight stuntin'
                             yeah we do it
                             like that. Calling out my name. ‘Cause I, I’m capable of anything.</p>
-                        
+
                         <p>Before you met me I was alright but things were kinda heavy. You just gotta ignite the
                             light and let
                             it shine.</p>
@@ -231,22 +231,22 @@
 
 
 <script>
-    console.log($);
-      $(function () {
-            $('#myCarousel').carousel({
-        interval:2000,
-        wrap: "false"
+    var myCarousel = document.querySelector('#myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: false
+    })
+
+    console.log("here at 240");
+    $('#playButton').click(function () {
+        console.log("play");
+        $('#carouselExampleIndicators').carousel.cycle ();
     });
-                
-                $('#playButton').click(function () {
-                    $('#carouselExampleIndicators').carousel('cycle');
-                });
-                $('#pauseButton').click(function () {
-                   console.log("pause");
-                    $('#carouselExampleIndicators').carousel('pause');
-                });
-            });
-</script> 
+    $('#pauseButton').click(function () {
+    console.log("pause");
+    $('#carouselExampleIndicators').carousel.pause ();
+    });
+</script>
 
 
 
