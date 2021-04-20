@@ -65,9 +65,46 @@
         .scaled{
             transform: scale(120%, 150%)
         }
+
+        /*styles for the transition*/
+
+        ul{
+            list-style:none;
+            padding-left:0px;
+        }
+
+        ul li {
+            display:inline-block;
+            padding: 5px 20px;
+            background-color: transparent;
+            transition: 1400ms;
+            border-bottom: 2px solid transparent;
+        }
+
+        ul li:hover {
+            background-color: rgba(255, 0, 255, .5);
+            transition: 1400ms;
+            border-bottom: 2px solid black;
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">NavLink</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section class="translate">
         <div class="original">
             <p>hello, world!</p>
