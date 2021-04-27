@@ -122,6 +122,67 @@
             transform:scale(1.6);
             z-index: 2;
         }
+
+
+
+        *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+body{
+  background:whitesmoke;
+}
+.middle{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card-2{
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+    background-image: linear-gradient(146deg, purple -40%, teal);
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.back h2{
+    color:whitesmoke;
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.card-2:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card-2:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+
+
+        
     </style>
 </head>
 
@@ -190,6 +251,20 @@
 
             </div>
         </main>
+
+        <div class="second-section">
+            <div class="card-2 middle">
+                <div class="front">
+                  <img src="Images/ME.JPG" alt="">
+                </div>
+                <div class="back">
+                  <div class="back-content middle">
+                    <h2>AWILDELEPHANT</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
         
 
