@@ -1,0 +1,51 @@
+body{
+    margin:0;
+
+}
+.wrapper{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(45deg, #F17c58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction:alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position:100%}
+}
+
+.flyingbird {
+    position:relative;
+}
+
+#bird{
+    left:100%;
+    animation:fly 5s infinite;
+    position:relative;
+}
+
+@keyframes fly{
+
+    0%{
+        left:100%;
+        top:5px;
+    }
+    25%{
+        top:100px;
+    }
+    50%{
+        top:80px;
+    }
+    75%{
+        top:25px;
+    }
+    100%{
+        left:-120px;
+        top:102px;
+    }
+}
+
+
+
