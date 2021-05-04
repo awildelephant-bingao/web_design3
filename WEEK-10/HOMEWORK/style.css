@@ -143,3 +143,43 @@ body {
         top: 20px;
     }
 }
+
+.suncontainer {
+    position: relative;
+}
+
+#sun {
+    left: 100%;
+    animation: raise 5s infinite;
+    position: relative;
+}
+
+@keyframes raise{
+
+    0% {
+        left: 100%;
+        top:100px;
+        
+    }
+
+    25% {
+        top:80px;
+       
+    }
+
+    50% {
+        top:60px;
+    }
+
+    75% {
+        top:80px;
+    }
+
+    100% {
+        left: -120px;
+        top:100px;
+
+    }
+}
+
+
