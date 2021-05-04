@@ -31,20 +31,22 @@ body {
 
 }
 .raining{
+    width:100%;
     position: relative;
-    z-index: 1000;
     animation-name: rain;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-fill-mode: forwards;
 
 }
 @keyframes rain {
     0% {
-        right:100%;
+        width: max(200vw, 200vh);
+        height: max(200vw, 200vh);
     }
 
     100% {
-        left:-120%;
+        width: max(1vw, 1vh);
+        height: max(1vw, 1vh);
     }
 }
 
@@ -123,19 +125,19 @@ body {
 
     0% {
         left: 100%;
-        top: 100px;
-    }
-
-    25% {
-        top: 80px;
-    }
-
-    50% {
         top: 60px;
     }
 
-    75% {
+    25% {
         top: 40px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    75% {
+        top: 10px;
     }
 
     100% {
@@ -149,9 +151,11 @@ body {
 }
 
 #sun {
-    left: 100%;
-    animation: raise 5s infinite;
-    position: relative;
+    position:relative;
+    animation-name: raise;
+    animation-duration: 20s;
+    animation-fill-mode: backwards;
+    animation-iteration-count:infinite;
 }
 
 @keyframes raise{
