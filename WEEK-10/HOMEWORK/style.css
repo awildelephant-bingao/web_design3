@@ -5,8 +5,8 @@ body {
 
 .wrapper {
     position: absolute;
-    width: 200vw;
-    height: 200vh;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(45deg, #F17c58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
     background-size: 600% 100%;
     animation: gradient 16s linear infinite;
@@ -25,10 +25,12 @@ body {
 }
 
 .rainingcontainer{
-    position:relative;
-    width: 200vw;
-    height: 200vh;
-
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    overflow:hidden;
+    background-image: url("https://i.pinimg.com/originals/91/95/f4/9195f4dd1b69f90038f627c8af422429.gif");
 }
 .raining{
     width:100%;
@@ -40,23 +42,40 @@ body {
 }
 @keyframes rain {
     0% {
-        width: max(200vw, 200vh);
-        height: max(200vw, 200vh);
+        left: 100%;
+        
+    }
+
+    25% {
+        left:25%
+        
+    }
+
+    50% {
+        left:50%
+    }
+
+    75% {
+        left:75%
     }
 
     100% {
-        width: max(1vw, 1vh);
-        height: max(1vw, 1vh);
+        left: -120px;
+        
     }
 }
 
 .flyingbird {
-    position: relative;
+    position: absolute;
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+    top:0;
 }
 
 #bird {
     left: 100%;
-    animation: fly 5s infinite;
+    animation: fly 10s infinite;
     position: relative;
 }
 
@@ -90,33 +109,63 @@ body {
 }
 
 #elephant {
+    position:absolute;
+    z-index: 1000;
+    top:30vh;
+    left:50%;
+    transform: translateX(-50%,-50%);
     animation-name: walk;
-    animation-duration: 20s;
+    animation-duration: 40s;
     animation-fill-mode: backwards;
     animation-iteration-count:infinite;
+    animation-timing-function: ease-in;
 }
 
 @keyframes walk {
 
     0% {
-        width: max(1vw, 1vh);
-        height: max(1vw, 1vh);
+        width: max(20vw, 20vw);
+        height: max(20vh, 20vh);
+        opacity: 0;
+    }
+
+    25%{
+        width: max(30vw, 30vw);
+        height: max(30vh, 30vh);
+        opacity: 25;
+
+    }
+
+    50%{
+        width: max(40vw, 40vw);
+        height: max(40vh, 40vh);
+        opacity: 50;
+
+    }
+   75%{
+        width: max(45vw, 45vw);
+        height: max(45vh, 45vh);
+        opacity: 75;
+
     }
 
     100% {
         width: max(50vw, 50vh);
         height: max(50vw, 50vh);
+        opacity: 100;
     }
 }
 
 .giraffecontainer {
-    position: relative;
+    position: absolute;
 }
 
 #giraffe {
     position: relative;
+    overflow:hidden;
     animation-name: walking;
     animation-duration: 20s;
+    animation-delay: 10s;
     animation-fill-mode: backwards;
     animation-iteration-count:infinite;
 }
@@ -125,65 +174,82 @@ body {
 
     0% {
         left: 100%;
-        top: 60px;
+        top: 300px;
     }
 
     25% {
-        top: 40px;
+        top: 320px;
     }
 
     50% {
-        top: 20px;
+        top: 350px;
     }
 
     75% {
-        top: 10px;
+        top: 380px;
     }
 
     100% {
         left: -120px;
-        top: 20px;
+        top: 300px;
     }
 }
 
 .suncontainer {
-    position: relative;
+    position: absolute;
+    top:0;
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+    animation-name: raise;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
 }
 
-#sun {
-    position:relative;
-    animation-name: raise;
-    animation-duration: 20s;
-    animation-fill-mode: backwards;
-    animation-iteration-count:infinite;
-}
+
 
 @keyframes raise{
 
     0% {
         left: 100%;
-        top:100px;
-        
+        top: 50px;
     }
 
     25% {
-        top:80px;
-       
+        top: 80px;
     }
 
     50% {
-        top:60px;
+        top: 100px;
     }
 
     75% {
-        top:80px;
+        top: 150px;
     }
 
     100% {
-        left: -120px;
-        top:100px;
-
+        left: -150px;
+        top: 200px;
     }
 }
+
+.treecontainer {
+    position: absolute;
+    top:40%;
+    left:0px;
+    overflow:hidden;
+    z-index: 1000;
+    
+}
+
+.treecontainer2 {
+    position: absolute;
+    top:40%;
+    left:100px;
+    overflow:hidden;
+    z-index: 1000;
+    
+}
+
 
 
