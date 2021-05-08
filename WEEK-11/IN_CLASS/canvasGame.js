@@ -1,3 +1,7 @@
+var score,scoreText;
+
+
+
 const canvas2 = document.getElementById("myGame");
 const ctx = canvas2.getContext('2d');
 
@@ -60,3 +64,14 @@ canvas2.addEventListener("click", function(event){
         cVelY = cVelY * 1.5;
     }
 })
+
+
+var count = (function(){
+
+    var counter = 0;
+    return function () {return counter +=1;}
+})();
+function myGame(){
+
+    document.getElementById("score").innerHTML = count();
+}
