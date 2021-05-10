@@ -4,7 +4,15 @@ var score,scoreText;
 
 const canvas2 = document.getElementById("myGame");
 const ctx = canvas2.getContext('2d');
+let colors = ['blue', 'yellow', 'black', 'red', 'brown', 'orange']
+let button = document.getElementById('button');
 
+button.addEventListener('click',function(){
+    var randomcolor = colors[Math.floor(math.random()* colors.length)]
+
+    ctx.fillStyle = "randomcolor";
+
+})
 
 
 
@@ -22,8 +30,12 @@ function drawFrame() {
 
     ctx.clearRect(0, 0, cWidth, cHeight);
 
-    ctx.fillStyle = "teal";
+    
     ctx.strokeStyle = "darkorange";
+
+   
+
+
 
     ctx.beginPath();
     ctx.arc(cPosX, cPosY, 75, 0, Math.PI*2);
