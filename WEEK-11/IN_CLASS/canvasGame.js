@@ -1,19 +1,11 @@
-var score,scoreText;
+var score=0;
+var scoreText;
 
 
 
 const canvas2 = document.getElementById("myGame");
 const ctx = canvas2.getContext('2d');
 let colors = ['blue', 'yellow', 'black', 'red', 'brown', 'orange']
-let button = document.getElementById('button');
-
-button.addEventListener('click',function(){
-    var randomcolor = colors[Math.floor(math.random()* colors.length)]
-
-    ctx.fillStyle = "randomcolor";
-
-})
-
 
 
 let cWidth = canvas2.width;
@@ -74,6 +66,10 @@ canvas2.addEventListener("click", function(event){
         console.log("HI!!");
         cVelX = cVelX * 1.5;
         cVelY = cVelY * 1.5;
+        var randomcolor = colors[Math.floor(Math.random()* colors.length)]
+        ctx.fillStyle = randomcolor;
+        incrementScore();
+
     }
 })
 
@@ -86,4 +82,9 @@ var count = (function(){
 function myGame(){
 
     document.getElementById("score").innerHTML = count();
+}
+
+function incrementScore() {
+    score++;
+    document.getElementById("score").innerHTML = score;
 }
