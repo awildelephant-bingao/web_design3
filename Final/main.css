@@ -1,0 +1,69 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.navbar-brand {
+    width:80px;
+    margin-top: -5px;
+}
+
+.header-background {
+    background-image: url(Images/giphy-pink.gif);
+}
+
+.banana-yellow-color {
+    color:yellow;
+}
+.banana-pink-color {
+    color:palevioletred;
+}
+.header-text-banana {
+    font-family: 'Sigmar One', cursive;
+}
+
+.nunito-font{
+    font-family: 'Nunito', sans-serif;
+}
+
+.fresh-banana{
+    width:200px;
+    height:250px;
+}
+
+.fresh-banana img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
