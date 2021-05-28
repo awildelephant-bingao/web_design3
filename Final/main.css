@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 
 .popup {
@@ -72,7 +73,7 @@ body {
 .contentBox .content h2 {
 
     font-size: 4em;
-    color: #ff4d54;
+    color: #ff94a5;
     line-height: 1em;
 
 }
@@ -90,7 +91,7 @@ body {
 
 .contentBox .content a {
     display: inline-block;
-    background: #ff4d54;
+    background: #ff94a5;
     color: #fff;
     margin-top: 15px;
     text-decoration: none;
@@ -149,8 +150,9 @@ body {
     color: yellow;
 }
 
+
 .banana-pink-color {
-    color: palevioletred;
+    color: #ff94a5;
 }
 
 .header-text-banana {
