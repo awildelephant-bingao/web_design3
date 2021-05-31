@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
+
+<style>
+    .wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff94a5, yellow);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+    .banana{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    overflow:hidden;
+    background-image: url("Images/open-banana.gif");
+    animation: shift 10s;
+}
+
+@keyframes shift {
+    0% {
+        left: 100%;
+        
+    }
+
+    100% {
+        left: -100px;;
+        
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+
+}
+
+
+
+.contentBox {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0, 1);
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0, 1);
+}
+
+.header-text-banana {
+    font-family: 'Sigmar One', cursive;
+}
+.nunito-font {
+    font-family: 'Nunito', sans-serif;
+}
+
+button{
+    height:50px;
+    width:120px;
+  border-radius: 4px;
+  background-color: #2177e9;
+  color: yellow;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Sigmar One', cursive;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+    <div class="popup">
+        <div class="contentBox">
+            <div class="content">
+                <h1 class="header-text-banana">Welcome to "Everything Banana"</h1>
+                <a href="index.html"><button><span>Enter</span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper"></div>
+
+    <div class="banana">
+        <img src="Images/open-banana.gif">
+    </div>
+
+    
+</body>
+
+<script>
+    const popup = document.querySelector('.popup');
+
+    window.onload = function(){
+        setTimeout(function(){
+            popup.style.display = "block"
+        },7000)
+    }
+
+    close.addEventListener('click',()=>{
+        popup.style.display = "none";
+    })
+</script>
+</html>
