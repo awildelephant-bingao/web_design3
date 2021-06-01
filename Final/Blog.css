@@ -91,7 +91,7 @@ main {
 
 
 .apply-btn:hover {
-    box-shadow: inset 100px 0 0 0 green;
+    box-shadow: inset 100px 0 0 0 #2177e9;
 
 }
 
@@ -187,7 +187,7 @@ footer {
 }
 
 .btn-secondary-head-1:hover {
-    box-shadow: inset 100px 0 0 0 green;
+    box-shadow: inset 100px 0 0 0 #2177e9;
 
 }
 
@@ -203,7 +203,7 @@ footer {
 }
 
 .btn-secondary-head-2:hover {
-    box-shadow: inset 100px 0 0 0 rgb(252, 189, 70)
+    box-shadow: inset 100px 0 0 0 #2177e9;
 }
 
 .btn-secondary-head-3 {
@@ -218,7 +218,7 @@ footer {
 }
 
 .btn-secondary-head-3:hover {
-    box-shadow: inset 100px 0 0 0 rgb(197, 0, 0)
+    box-shadow: inset 100px 0 0 0 #2177e9;
 }
 
 .btn-submit {
