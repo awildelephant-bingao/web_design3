@@ -11,6 +11,21 @@ body {
     background-color: rgba(241, 241, 241, 1.00);
 }
 
+
+
+.navbar-brand {
+    width: 80px;
+    margin-top: -5px;
+}
+
+
+
+
+
+
+
+
+
 .swiper-wrapper{
     display: flex;
     flex-direction: column;
@@ -73,6 +88,10 @@ body {
     line-height: 20px;
 }
 
+
+ion-icon img{
+    width:20px;
+}
 .cart {
     position: absolute;
     bottom: 0px;
@@ -116,9 +135,6 @@ body {
 }
 
 .heading h1 {
-    border-left: 2px solid #000000;
-    Border-right: 2px solid #000000;
-    background-color:  #ff94a5;
     text-shadow: 2px 2px 12px rgba(69, 66, 66, 0.3);
     padding: 0px 10px;
     color: #FFFFFF;
@@ -142,9 +158,7 @@ body {
 
 }
 
-    .time{
-        top:-10px;
-    }
+    
 
     .price{
         margin-bottom:10px;

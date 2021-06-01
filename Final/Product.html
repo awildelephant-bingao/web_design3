@@ -1,15 +1,67 @@
-<!--doctype html-->
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-      <meta charset="utf-8">
-      <title>Product-slider</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/swiper.min.css" />
       <link rel="stylesheet" href="Product.css" />
 </head>
 
 <body>
+      <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="container-fluid">
+                      <a class="navbar-brand" href="Home.html">
+                          <img src="Images/banana-logo" alt="my-logo" class="img-fluid" />
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                          aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="navigation nav nav-masthead justify-content-around float-md-end collapse navbar-collapse mb-auto"
+                          id="navbarSupportedContent">
+          
+          
+          
+                          <a class="nav-link sm-h5 banana-pink-color  fw-bold active nunito-font" aria-current="page"
+                              href="index.html">Home</a>
+                          <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Product.html">Product</a>
+                          <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Blog.html">Blog</a>
+ 
+                          <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Product.html">Blog</a>
+                          <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Cart.html"> <ion-icon name="basket"> Cart <span> 0 </span><img src="Images/cart.svg"></ion-icon></a>
+                        
+                  
+                      </div>
+
+
+                  </div>
+          
+              </nav>
+      </header>
       <div class="product-section">
       <div class="heading">
             <h1>Coming Soon</h1>
@@ -28,7 +80,7 @@
                                     <a href="#" class="price">Price-40$</a>
                               </p>
                               <div class="cart">
-                                    <a href="#">Add To Cart</a>
+                                    <a class="add-cart" href="#">Add To Cart</a>
                               </div>
                         </div>
 
@@ -47,7 +99,7 @@
                                     <a href="#" class="price">Price-40$</a>
                               </p>
                               <div class="cart">
-                                    <a href="#">Add To Cart</a>
+                                    <a class="add-cart" href="#">Add To Cart</a>
                               </div>
                         </div>
 
@@ -67,7 +119,7 @@
                                     <a href="#" class="price">Price-40$</a>
                               </p>
                               <div class="cart">
-                                    <a href="#">Add To Cart</a>
+                                    <a class="add-cart" href="#">Add To Cart</a>
                               </div>
                         </div>
 
@@ -87,7 +139,7 @@
                                     <a href="#" class="price">Price-40$</a>
                               </p>
                               <div class="cart">
-                                    <a href="#">Add To Cart</a>
+                                    <a class="add-cart" href="#">Add To Cart</a>
                               </div>
                         </div>
 
@@ -106,7 +158,7 @@
                                     <a href="#" class="price">Price-40$</a>
                               </p>
                               <div class="cart">
-                                    <a href="#">Add To Cart</a>
+                                    <a class="add-cart" href="#">Add To Cart</a>
                               </div>
                         </div>
 
@@ -126,7 +178,7 @@
                                     <a href="#" class="price">Price-40$</a>
                               </p>
                               <div class="cart">
-                                    <a href="#">Add To Cart</a>
+                                    <a class="add-cart" href="#">Add To Cart</a>
                               </div>
                         </div>
 
@@ -140,7 +192,7 @@
       <!--slider 2 clothes------------------------------------------>
       
             <div class="heading">
-                  <h1>Popular &emsp; Products &emsp;</h1>
+                  <h1>Popular Products</h1>
             </div>
             <!--swiper slider-->
             <div class="swiper-container">
@@ -148,7 +200,7 @@
                         <!--slide 1-------------------------------------->
                         <div class="swiper-slide">
                               <div class="slider-box">
-                                    <p class="time">New</p>
+                                    <p class="time">Popular</p>
                                     <div class="img-box">
                                           <img src="Images/product-banana-1.jpg">
                                     </div>
@@ -156,7 +208,7 @@
                                           <a href="#" class="price">Price-40$</a>
                                     </p>
                                     <div class="cart">
-                                          <a href="#">Add To Cart</a>
+                                          <a class="add-cart" href="#">Add To Cart</a>
                                     </div>
                               </div>
 
@@ -167,7 +219,7 @@
                         <!--slide 2-------------------------------------->
                         <div class="swiper-slide">
                               <div class="slider-box">
-                                    <p class="time">New</p>
+                                    <p class="time">Popular</p>
                                     <div class="img-box">
                                           <img src="Images/product-banana-2.jpg">
                                     </div>
@@ -175,7 +227,7 @@
                                           <a href="#" class="price">Price-40$</a>
                                     </p>
                                     <div class="cart">
-                                          <a href="#">Add To Cart</a>
+                                          <a class="add-cart" href="#">Add To Cart</a>
                                     </div>
                               </div>
 
@@ -187,7 +239,7 @@
                         <!--slide 3-------------------------------------->
                         <div class="swiper-slide">
                               <div class="slider-box">
-                                    <p class="time">New</p>
+                                    <p class="time">Popular</p>
                                     <div class="img-box">
                                           <img src="Images/product-banana-3.jpg">
                                     </div>
@@ -195,7 +247,7 @@
                                           <a href="#" class="price">Price-40$</a>
                                     </p>
                                     <div class="cart">
-                                          <a href="#">Add To Cart</a>
+                                          <a  class="add-cart" href="#">Add To Cart</a>
                                     </div>
                               </div>
 
@@ -207,7 +259,7 @@
                         <!--slide 4-------------------------------------->
                         <div class="swiper-slide">
                               <div class="slider-box">
-                                    <p class="time">New</p>
+                                    <p class="time">Popular</p>
                                     <div class="img-box">
                                           <img src="Images/product-banana-4.jpg">
                                     </div>
@@ -215,7 +267,7 @@
                                           <a href="#" class="price">Price-40$</a>
                                     </p>
                                     <div class="cart">
-                                          <a href="#">Add To Cart</a>
+                                          <a class="add-cart" href="#">Add To Cart</a>
                                     </div>
                               </div>
 
@@ -226,7 +278,7 @@
                         <!--slide 5-------------------------------------->
                         <div class="swiper-slide">
                               <div class="slider-box">
-                                    <p class="time">New</p>
+                                    <p class="time">Popular</p>
                                     <div class="img-box">
                                           <img src="Images/product-banana-5.jpg">
                                     </div>
@@ -234,7 +286,7 @@
                                           <a href="#" class="price">Price-40$</a>
                                     </p>
                                     <div class="cart">
-                                          <a href="#">Add To Cart</a>
+                                          <a class="add-cart" href="#">Add To Cart</a>
                                     </div>
                               </div>
 
@@ -246,7 +298,7 @@
                         <!--slide 6-------------------------------------->
                         <div class="swiper-slide">
                               <div class="slider-box">
-                                    <p class="time">New</p>
+                                    <p class="time">Popular</p>
                                     <div class="img-box">
                                           <img src="Images/product-banana-6.jpg">
                                     </div>
@@ -254,7 +306,7 @@
                                           <a href="#" class="price">Price-40$</a>
                                     </p>
                                     <div class="cart">
-                                          <a href="#">Add To Cart</a>
+                                          <a class="add-cart" href="#">Add To Cart</a>
                                     </div>
                               </div>
 
@@ -268,8 +320,12 @@
 
             </div>
       </div>
-      <!--swiper  slider end-->
-      <script type="text/javascript" src="js/swiper.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+</script>
+
       <script>
             var swiper = new Swiper('.swiper-container', {
                   slidesPerView: 5.2,
@@ -279,6 +335,9 @@
                         clickable: true,
                   },
             });
+
+
+      
       </script>
 </body>
 
