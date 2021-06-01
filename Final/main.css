@@ -22,7 +22,7 @@ body {
     width: 300px;
     height: 450px;
     flex-direction: column;
-    background: #ffffff;
+    background-color: lightyellow;
     border-radius: 20px;
     display: flex;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0, 1);
@@ -53,6 +53,14 @@ body {
     min-width: 200px;
     z-index: 1;
 }
+.popuph3{
+    margin-top:50px;
+}
+.getthedeal{
+    margin-top:1px;
+}
+
+
 
 .contentBox .content {
     position: relative;
@@ -62,7 +70,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.navigation{
+    margin-top: 4px;
+}
 .contentBox .content h3 {
     color: #333;
     line-height: 1em;
@@ -213,7 +223,7 @@ body {
         position: relative;
         width: 600px;
         height: 400px;
-        background-color: #fff;
+        background-color: lightyellow;
         border-radius: 20px;
         display: flex;
         flex-direction: row;
