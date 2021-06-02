@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.navbar-brand {
+    width: 80px;
+    margin-top: -5px;
+}
+
+.header-background {
+    background-image: url(Images/Header-banana-faq.jpg);
+}
+
+.banana-yellow-color {
+    color: yellow;
+}
+
+
+.banana-pink-color {
+    color: #ff94a5;
+}
+
+.header-text-banana {
+    font-family: 'Sigmar One', cursive;
+}
+
+.nunito-font {
+    font-family: 'Nunito', sans-serif;
+}
