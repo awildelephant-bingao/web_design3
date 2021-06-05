@@ -73,8 +73,8 @@
                               <div class="img-box">
                                     <img src="Images/Product-page-1.jpg">
                               </div>
-                              <p class="detail">Black ladies bags collections
-                                    <a href="#" class="price">Price-40$</a>
+                              <p class="detail">Banana Macaron
+                                    <a href="#" class="price">$10</a>
                               </p>
                               <div class="cart">
                                     <a class="add-cart" href="#">Add To Cart</a>
@@ -92,8 +92,8 @@
                               <div class="img-box">
                                     <img src="Images/First-section-product-1.jpg">
                               </div>
-                              <p class="detail">Black ladies bags collections
-                                    <a href="#" class="price">Price-40$</a>
+                              <p class="detail">Banana Cup Cake
+                                    <a href="#" class="price">$8</a>
                               </p>
                               <div class="cart">
                                     <a class="add-cart" href="#">Add To Cart</a>
@@ -112,8 +112,8 @@
                               <div class="img-box">
                                     <img src="Images/First-section-product-2.jpg">
                               </div>
-                              <p class="detail">Black ladies bags collections
-                                    <a href="#" class="price">Price-40$</a>
+                              <p class="detail">Banana Slice Cake
+                                    <a href="#" class="price">$20</a>
                               </p>
                               <div class="cart">
                                     <a class="add-cart" href="#">Add To Cart</a>
@@ -132,8 +132,8 @@
                               <div class="img-box">
                                     <img src="Images/First-section-product-6.jpg">
                               </div>
-                              <p class="detail">Black ladies bags collections
-                                    <a href="#" class="price">Price-40$</a>
+                              <p class="detail">Banana Coffee Cake
+                                    <a href="#" class="price">$20</a>
                               </p>
                               <div class="cart">
                                     <a class="add-cart" href="#">Add To Cart</a>
@@ -151,8 +151,8 @@
                               <div class="img-box">
                                     <img src="Images/First-section-product-4.jpg">
                               </div>
-                              <p class="detail">Black ladies bags collections
-                                    <a href="#" class="price">Price-40$</a>
+                              <p class="detail">Banana Ice Cream
+                                    <a href="#" class="price">$10</a>
                               </p>
                               <div class="cart">
                                     <a class="add-cart" href="#">Add To Cart</a>
@@ -171,8 +171,8 @@
                               <div class="img-box">
                                     <img src="Images/First-section-product-5.jpg">
                               </div>
-                              <p class="detail">Black ladies bags collections
-                                    <a href="#" class="price">Price-40$</a>
+                              <p class="detail">Banana Puff
+                                    <a href="#" class="price">$5</a>
                               </p>
                               <div class="cart">
                                     <a class="add-cart" href="#">Add To Cart</a>
@@ -201,8 +201,8 @@
                                     <div class="img-box">
                                           <img src="Images/product-banana-1.jpg">
                                     </div>
-                                    <p class="detail">Black ladies bags collections
-                                          <a href="#" class="price">Price-40$</a>
+                                    <p class="detail">Banana Pudding
+                                          <a href="#" class="price">$15</a>
                                     </p>
                                     <div class="cart">
                                           <a class="add-cart" href="#">Add To Cart</a>
@@ -220,8 +220,8 @@
                                     <div class="img-box">
                                           <img src="Images/product-banana-2.jpg">
                                     </div>
-                                    <p class="detail">Black ladies bags collections
-                                          <a href="#" class="price">Price-40$</a>
+                                    <p class="detail">Frozen Banana
+                                          <a href="#" class="price">$10</a>
                                     </p>
                                     <div class="cart">
                                           <a class="add-cart" href="#">Add To Cart</a>
@@ -240,8 +240,8 @@
                                     <div class="img-box">
                                           <img src="Images/product-banana-3.jpg">
                                     </div>
-                                    <p class="detail">Black ladies bags collections
-                                          <a href="#" class="price">Price-40$</a>
+                                    <p class="detail">Banana Salad
+                                          <a href="#" class="price">$18</a>
                                     </p>
                                     <div class="cart">
                                           <a  class="add-cart" href="#">Add To Cart</a>
@@ -260,8 +260,8 @@
                                     <div class="img-box">
                                           <img src="Images/product-banana-4.jpg">
                                     </div>
-                                    <p class="detail">Black ladies bags collections
-                                          <a href="#" class="price">Price-40$</a>
+                                    <p class="detail">Banana Acai
+                                          <a href="#" class="price">$20</a>
                                     </p>
                                     <div class="cart">
                                           <a class="add-cart" href="#">Add To Cart</a>
@@ -279,8 +279,8 @@
                                     <div class="img-box">
                                           <img src="Images/product-banana-5.jpg">
                                     </div>
-                                    <p class="detail">Black ladies bags collections
-                                          <a href="#" class="price">Price-40$</a>
+                                    <p class="detail">Fresh Banana with Nuts
+                                          <a href="#" class="price">$10</a>
                                     </p>
                                     <div class="cart">
                                           <a class="add-cart" href="#">Add To Cart</a>
@@ -299,8 +299,8 @@
                                     <div class="img-box">
                                           <img src="Images/product-banana-6.jpg">
                                     </div>
-                                    <p class="detail">Black ladies bags collections
-                                          <a href="#" class="price">Price-40$</a>
+                                    <p class="detail">Pink Frozen Banana
+                                          <a href="#" class="price">$10</a>
                                     </p>
                                     <div class="cart">
                                           <a class="add-cart" href="#">Add To Cart</a>
@@ -324,14 +324,116 @@
 </script>
 
       <script>
-            var swiper = new Swiper('.swiper-container', {
-                  slidesPerView: 5.2,
-                  spaceBetween: 30,
-                  pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                  },
-            });
+           let carts = document.querySelectorAll('.add-cart');
+           let products = [
+                 {
+                 name: "Banana Macaron",
+                 tag: "bananamacaron",
+                 price: 10,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Cup Cake",
+                 tag: "bananacupcake",
+                 price: 8,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Slice Cake",
+                 tag: "bananacslicecake",
+                 price: 20,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Coffee Cake",
+                 tag: "bananacoffeecake",
+                 price: 20,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Ice Cream",
+                 tag: "bananaicecream",
+                 price: 10,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Puff",
+                 tag: "bananapuff",
+                 price: 15,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Pudding",
+                 tag: "bananapudding",
+                 price: 15,
+                 inCart: 0
+           },
+           {
+                 name: "Frozen Banana",
+                 tag: "frozenbanana",
+                 price: 10,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Salad",
+                 tag: "bananasalad",
+                 price: 18,
+                 inCart: 0
+           },
+           {
+                 name: "Banana Acai",
+                 tag: "bananaacai",
+                 price: 20,
+                 inCart: 0
+           },
+           {
+                 name: "Fresh Banana with Nuts",
+                 tag: "freshbananawithnuts",
+                 price: 10,
+                 inCart: 0
+           },
+           {
+                 name: "Pink Frozen Banana",
+                 tag: "pinkfrozenbanana",
+                 price: 10,
+                 inCart: 0
+           },
+
+      ]
+
+
+
+           for (let i=0; i < carts. length; i++) {
+                 carts[i].addEventListener('click',()=>{
+                  cartNumber();
+                 })
+           }
+
+
+           function onLoadCartNumber(){
+            let productNumber = localStorage.getItem('cartNumber');
+                  if(productNumber){
+                        document.querySelectorAll('.cart span').textContent = productNumber;
+                  }
+
+           }
+
+           function cartNumber(){
+                 let productNumber = localStorage.getItem('cartNumber');
+                productNumber = parseInt(productNumber);
+
+                if(productNumber){
+                      localStorage.setItem('cartNumber',productNumber + 1);
+                      document.querySelectorAll('.cart span').textContent = productNumber + 1;
+                } else{
+                  localStorage.setItem('cartNumber', 1);
+                  document.querySelectorAll('.cart span').textContent = 1;
+                }
+
+           }
+
+           onLoadCartNumber();
+
 
 
       
