@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
 
 <style>
+    body{
+        margin:0px;
+        padding:0px;
+    }
     .wrapper {
     position: absolute;
     width: 100vw;
@@ -21,6 +25,24 @@
     animation: gradient 16s linear infinite;
     animation-direction: alternate;
 }
+
+    .close {
+    position: absolute;
+
+    height:50px;
+    width:120px;
+  border-radius: 4px;
+  background-color: #2177e9;
+  color: yellow;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Sigmar One', cursive;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
 
 @keyframes gradient {
     0% {
@@ -34,12 +56,13 @@
 
     .banana{
     position:absolute;
-    width: 100vw;
+    width: 110vw;
     height: 100vh;
     top:0;
     overflow:hidden;
-    background-image: url("Images/open-banana.gif");
-    animation: shift 10s;
+    background-image: url("Images/bananagiphy.gif");
+    animation: shift 10s infinite;
+    animation-direction: alternate;
 }
 
 @keyframes shift {
@@ -77,12 +100,19 @@
     display: flex;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0, 1);
 }
+.welcome{
+    font-family: 'Sigmar One', cursive;
+}
 
 .header-text-banana {
     font-family: 'Sigmar One', cursive;
 }
 .nunito-font {
     font-family: 'Nunito', sans-serif;
+}
+
+.leave{
+    background-color: black;
 }
 
 button{
@@ -124,6 +154,17 @@ button:hover span:after {
   opacity: 1;
   right: 0;
 }
+
+.leaving{
+    font-family: 'Sigmar One', cursive;
+    display:none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
 </style>
 </head>
 <body>
@@ -131,18 +172,23 @@ button:hover span:after {
     <div class="popup">
         <div class="contentBox">
             <div class="content">
-                <h1 class="header-text-banana">Welcome to "Everything Banana"</h1>
+                <h3 class="header-text-banana">Welcome to</h3>
+                <h1 class="welcome">"Everything Banana"</h1>
+                <div style="margin-right: 110px;">
                 <a href="index.html"><button><span>Enter</span></button></a>
+                <button class="close">Leave</button>
                 </div>
             </div>
         </div>
     </div>
 
+        <h1 class="leaving">HOW DARE YOU!</h1>
+    </div>
 
     <div class="wrapper"></div>
 
     <div class="banana">
-        <img src="Images/open-banana.gif">
+        
     </div>
 
     
@@ -150,6 +196,8 @@ button:hover span:after {
 
 <script>
     const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+    const leave = document.querySelector('.leaving')
 
     window.onload = function(){
         setTimeout(function(){
@@ -159,6 +207,9 @@ button:hover span:after {
 
     close.addEventListener('click',()=>{
         popup.style.display = "none";
+        leave.style.display = "inline-block";
+        
+       
     })
 </script>
 </html>
