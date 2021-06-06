@@ -55,11 +55,6 @@
    margin-top: -5px;
 }
 
-.navigation{
-   margin-top: 4px;
-   font-family: 'Nunito', sans-serif;
-    color: #ff94a5;
-}
 
 ion-icon img{
    width:20px;
@@ -101,21 +96,11 @@ ion-icon img{
 
 main {
     margin-bottom: -30px;
-    padding-top: 82px;
 }
 
 
 
 
-
-
-
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-
-}
 
 .video-h2{
     margin-top:3px;
@@ -126,10 +111,6 @@ header {
     margin-bottom:23px;
 }
 
-.navbar-brand img {
-    max-width: 100px;
-    margin-left: -27px;
-}
 
 .nav-item {
     font-family: 'Nunito', sans-serif;

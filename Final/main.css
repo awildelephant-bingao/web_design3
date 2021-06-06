@@ -22,7 +22,7 @@ body {
  }
 
 .navbar-brand {
-    width: 80px;
+    width: 100px;
     margin-top: -5px;
 }
 
@@ -74,6 +74,10 @@ ion-icon img{
     display: none;
     z-index: 1000;
 
+}
+
+.product-section{
+    margin:-20px;
 }
 
 

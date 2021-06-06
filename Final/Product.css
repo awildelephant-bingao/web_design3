@@ -43,7 +43,7 @@ body {
 
 .slider-box {
     margin-top: 20px;
-    height: 350px;
+    height: 300px;
     width: 100%;
     position: relative;
     background-color: #FFFFFF;
@@ -79,6 +79,7 @@ body {
 }
 
 .detail {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,8 +89,8 @@ body {
 }
 
 .price {
-    color: #FFFFFF;
-    background-color: #ff94a5;
+    color:#ff94a5;
+   font-size: 20px;
     line-height: 20px;
 }
 
