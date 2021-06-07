@@ -5,19 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Hello, world!</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <link href="main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
@@ -30,7 +29,7 @@
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="Shopping.css" />
+
 </head>
 
 <body>
@@ -56,127 +55,120 @@
                 <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Blog.html">Blog</a>
 
                 <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="FAQ.html">FAQ</a>
-                
+
                 <div>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
                             class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
                         Cart</button></div>
-        
+
             </div>
-
-
         </div>
 
     </nav>
 
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 banana-yellow-color  rounded bg-dark header-background">
 
-
-    <!-- Main -->
-    <div class="container product-background">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="Images/product-banana-1.jpg"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Orange</h4>
-                        <p class="card-text">Price: $0.5</p>
-                        <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to
-                            cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top"
-                        src="Images/product-banana-2.jpg"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Banana</h4>
-                        <p class="card-text">Price: $1.22</p>
-                        <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to
-                            cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="Images/product-banana-3.jpg"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Lemon</h4>
-                        <p class="card-text">Price: $5</p>
-                        <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="Images/product-banana-4.jpg"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Orange</h4>
-                        <p class="card-text">Price: $0.5</p>
-                        <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to
-                            cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top"
-                        src="Images/product-banana-5.jpg"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Banana</h4>
-                        <p class="card-text">Price: $1.22</p>
-                        <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to
-                            cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="Images/product-banana-6.jpg"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Lemon</h4>
-                        <p class="card-text">Price: $5</p>
-                        <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <table class="show-cart table">
-
-                    </table>
-                    <div>Total price: $<span class="total-cart"></span></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Order now</button>
-                </div>
+            <div class="col-md-6 px-0">
+                <h1 class="display-3 header-text-banana">Everything Banana</h1>
+                <p class="lead my-3 nunito-font">Do you like banana?</p>
             </div>
         </div>
-    </div>
+    </main>
+        
 
-    <script src="Shopping.js"></script>
+
+
+        <!-- Main -->
+        <div class="container product-background">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 product-row">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="Images/product-banana-1.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Orange</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="Images/product-banana-2.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Banana</h4>
+                            <p class="card-text">Price: $1.22</p>
+                            <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="Images/product-banana-3.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Lemon</h4>
+                            <p class="card-text">Price: $5</p>
+                            <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="Images/product-banana-4.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Orange</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary">Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="card-img-top" src="Images/product-banana-5.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Banana</h4>
+                            <p class="card-text">Price: $1.22</p>
+                            <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+        
+
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="Shopping.js"></script>
 </body>
 
 </html>

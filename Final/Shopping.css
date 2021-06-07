@@ -35,6 +35,12 @@ body {
 
   .product-background {
       background-color: lightblue;
+      
+  }
+
+  .product-row{
+    margin-left: 0px;
+    margin-right:0px;
   }
 
 

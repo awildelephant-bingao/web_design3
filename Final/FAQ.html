@@ -16,68 +16,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
-
-   
-
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
-    
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+
+
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="Images/banana-logo" alt="my-logo" class="img-fluid" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navigation nav nav-masthead justify-content-around float-md-end collapse navbar-collapse mb-auto"
-            id="navbarSupportedContent">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/banana-logo" alt="my-logo" class="img-fluid" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navigation nav nav-masthead justify-content-around float-md-end collapse navbar-collapse mb-auto"
+                id="navbarSupportedContent">
 
-            <a class="nav-link sm-h5  fw-bold active nunito-font" aria-current="page"
-                href="index.html">Home</a>
-            <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Shopping.html">Product</a>
-            <a class="nav-link sm-h5  fw-bold nunito-font" href="Blog.html">Blog</a>
 
-            <a class="nav-link sm-h5 fw-bold nunito-font" href="FAQ.html">FAQ</a>
-           
-            <div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
-                      class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
-                  Cart</button></div>
-  
-      </div>
-          
-    
+
+                <a class="nav-link sm-h5 banana-pink-color  fw-bold active nunito-font" aria-current="page"
+                    href="index.html">Home</a>
+                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Shopping.html">Product</a>
+                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Blog.html">Blog</a>
+
+                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="FAQ.html">FAQ</a>
+
+                <div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                            class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                        Cart</button></div>
+
+            </div>
         </div>
 
+    </nav>
 
-    </div>
+    <main class="container">
+        <div class="p-4 p-md-5 mb-4 banana-yellow-color rounded bg-dark header-background">
 
-</nav>
-
-        <main class="container">
-            <div class="p-4 p-md-5 mb-4 banana-yellow-color  rounded bg-dark header-background">
-    
-                <div class="col-md-6 px-0">
-                    <h1 class="display-3 header-text-banana">Everything Banana</h1>
-                    <p class="lead my-3 nunito-font">Do you like banana?</p>
-                </div>
+            <div class="col-md-6 px-0">
+                <h1 class="display-3 header-text-banana">Everything Banana</h1>
+                <p class="lead my-3 nunito-font">Do you like banana?</p>
             </div>
+        </div>
+    </main>
 
-            <div>
                 <div class="container px-4 py-5" id="custom-cards">
                     <h2 class="pb-2 border-bottom">Contact us</h2>
                 
                     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                       <div class="col ">
-                        <div class="card card-cover h-100 overflow-hidden text-black rounded-5 nunito-font shadow-lg column-1" >
-                          <div class="d-flex flex-column h-100 p-5 pb-3 ttext-black nunito-font text-shadow-1">
+                        <div class="card card-cover h-100 overflow-hidden text-black rounded-5 nunito-font shadow-lg" >
+                          <div class="d-flex flex-column h-100 p-5 pb-3 ttext-black nunito-font column-1 text-shadow-1">
                             <h2 class="display-6 lh-1">800- <span></span>666-6666</h2>
                             <ul class="d-flex list-unstyled mt-auto">
                              
@@ -92,8 +97,8 @@
                       </div>
                 
                       <div class="col ">
-                        <div class="card card-cover h-100 overflow-hidden text-black nunito-font  column-2 rounded-5 shadow-lg" >
-                          <div class="d-flex flex-column h-100 p-5 pb-3 text-black nunito-font  text-shadow-1">
+                        <div class="card card-cover h-100 overflow-hidden text-black nunito-font rounded-5 shadow-lg" >
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-black nunito-font column-2 text-shadow-1">
                             <h2 class="display-6 lh-1 ">Everything Banana</h2>
                             <ul class="d-flex list-unstyled mt-auto">
                               
@@ -108,8 +113,8 @@
                       </div>
                 
                       <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-black column-3 nunito-font  rounded-5 shadow-lg" >
-                          <div class="d-flex flex-column h-100 p-5 pb-3 text-black nunito-font text-shadow-1">
+                        <div class="card card-cover h-100 overflow-hidden text-black nunito-font  rounded-5 shadow-lg" >
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-black column-3 nunito-font text-shadow-1">
                             <h2 class="display-6 lh-1 ">Everything Banana</h2>
                             <ul class="d-flex list-unstyled mt-auto">
                               
