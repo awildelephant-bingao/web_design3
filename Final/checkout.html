@@ -16,15 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
-
-   
-
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
-    
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+
+
 </head>
 
-<body class="bg-light">
+<body>
+
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -37,69 +46,41 @@
             </button>
             <div class="navigation nav nav-masthead justify-content-around float-md-end collapse navbar-collapse mb-auto"
                 id="navbarSupportedContent">
-    
-    
-    
-                <a class="nav-link sm-h5 banana-pink-color  fw-bold active nunito-font" aria-current="page"
+
+
+
+                <a class="nav-link sm-h5 banana-pink-color fw-bold active nunito-font" aria-current="page"
                     href="index.html">Home</a>
-                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Product.html">Product</a>
-                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Blog.html">Blog</a>
-    
-                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="FAQ.html">FAQ</a>
-                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Cart.html"> <ion-icon name="basket"> Cart <span> 0 </span><img src="Images/cart.svg"></ion-icon></a>
-              
-        
+                <a class="nav-link sm-h5 banana-pink-color fw-bold nunito-font" href="Shopping.html">Product</a>
+                <a class="nav-link sm-h5 banana-pink-color fw-bold nunito-font" href="Blog.html">Blog</a>
+
+                <a class="nav-link sm-h5 banana-pink-color fw-bold nunito-font" href="FAQ.html">FAQ</a>
+
+                <div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                            class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                        Cart</button></div>
+
             </div>
-    
-    
         </div>
-    
-    </nav>
+
     
 <div class="container">
   <main>
-
 
     <div class="row g-5">
       <div class="col-md-5 col-lg-4 order-md-last">
         <h4 class="d-flex justify-content-between align-items-center mb-3">
           <span class="text-primary">Your cart</span>
-          <span class="badge bg-primary rounded-pill">3</span>
         </h4>
-        <ul class="list-group mb-3">
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Product name</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$12</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Second product</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$8</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between lh-sm">
-            <div>
-              <h6 class="my-0">Third item</h6>
-              <small class="text-muted">Brief description</small>
-            </div>
-            <span class="text-muted">$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between bg-light">
-            <div class="text-success">
-              <h6 class="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
-            </div>
-            <span class="text-success">−$5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
-            <strong>$20</strong>
-          </li>
-        </ul>
+        <div class="modal-body">
+          <table class="show-cart table">
+
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+        
+  
 
         <form class="card p-2">
           <div class="input-group">
@@ -265,6 +246,31 @@
     </div>
   </main>
 
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    
+                            <a href="checkout.html"><button type="button" class="btn btn-primary">Check Out</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">© 2017–2021 Company Name</p>
     <ul class="list-inline">
@@ -274,6 +280,7 @@
     </ul>
   </footer>
 </div>
+    <script src="Shopping.js"></script> 
 
 
     <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
