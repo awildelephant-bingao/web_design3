@@ -1,0 +1,41 @@
+
+
+body {
+    margin: 0px;
+    padding: 0px;    
+}
+
+ .nav-link{
+     color:#ff94a5;
+ }
+
+.navbar-brand {
+    width: 100px;
+    margin-top: -5px;
+}
+
+.navigation{
+    margin-top: 4px;
+    font-family: 'Nunito', sans-serif;
+     color: #ff94a5;
+}
+  
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+    width: 200px;
+    
+  }
+  .card-img-top {
+    width: 100%;
+    align-self: center;
+  }
+
+  .product-background {
+      background-color: lightblue;
+  }
+
+
+

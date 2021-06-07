@@ -2,20 +2,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    height: 100%;
   
 }
 
-html,
-body {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    
-}
 
  .nav-link{
      color:#ff94a5;
@@ -32,23 +23,7 @@ body {
      color: #ff94a5;
 }
 
-ion-icon img{
-    width:20px;
-}
-.cart {
-    position: absolute;
-    bottom: 0px;
-    height: 45px;
-    background-color: #ff94a5;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.cart a {
-    color: #FFFFFF;
-}
 
 .slider-box:hover {
     box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.40);
@@ -59,12 +34,6 @@ ion-icon img{
     transition: all ease 0.3s;
 }
 
-.cart:hover {
-    transform: scale(1.1);
-    background-color: #2177e9;
-    box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.40);
-    transition: all ease 0.1s;
-}
 
 .popup {
     position: fixed;
@@ -135,9 +104,7 @@ ion-icon img{
     justify-content: center;
     align-items: center;
 }
-.navigation{
-    margin-top: 4px;
-}
+
 .contentBox .content h3 {
     color: #333;
     line-height: 1em;
@@ -204,9 +171,7 @@ footer {
 margin-bottom: 20px;
 }
 
-.mb-1 a {
-    font-size: 15px;
-}
+
 
 
 
@@ -271,7 +236,22 @@ margin-bottom: 20px;
 
 
 
+.show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+    width: 200px;
+    
+  }
+  .card-img-top {
+    width: 100%;
+    align-self: center;
+  }
 
+  .product-background {
+      background-color: lightblue;
+  }
 
 
 

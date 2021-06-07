@@ -4,6 +4,11 @@ body {
     box-sizing: border-box;
   
 }
+
+.mb-1 a {
+    font-size: 15px;
+}
+
 .navbar-brand {
     width: 80px;
     margin-top: -5px;
@@ -46,19 +51,6 @@ body {
     color: #ff94a5;
 }
 
-ion-icon img{
-   width:20px;
-}
-.cart {
-   position: absolute;
-   bottom: 0px;
-   height: 45px;
-   background-color: #ff94a5;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
 
 footer {
     font-size: 12px;
