@@ -1,8 +1,9 @@
-
-
 body {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;   
+    box-sizing: border-box;
+    position: relative;
+    height: 100%; 
 }
 
  .nav-link{
@@ -23,11 +24,7 @@ body {
   .show-cart li {
     display: flex;
   }
-  .card {
-    margin-bottom: 20px;
-    width: 200px;
-    
-  }
+ 
   .card-img-top {
     width: 100%;
     align-self: center;
