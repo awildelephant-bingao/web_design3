@@ -7,7 +7,28 @@ body {
   
 }
 
+.cart-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
 
+.header-background-FAQ {
+    background-image: url(Images/Header-banana-faq.jpg);
+}
+
+.column-1{
+    background-color:lightpink;
+
+}
+.column-2{
+    background-color:lightyellow;;
+
+}
+.column-3{
+    background-color:lightblue;;
+
+}
  .nav-link{
      color:#ff94a5;
  }
@@ -192,7 +213,25 @@ footer {
     height: 225;
 }
 
+.show-cart li {
+    display: flex;
+  }
+ 
+  .card-img-top {
+    width: 100%;
+    align-self: center;
+  }
 
+  .product-background {
+      background-color: lightblue;
+      
+  }
+
+ 
+  .product-row{
+    margin-left: 0px;
+    margin-right:0px;
+  }
 
 
 

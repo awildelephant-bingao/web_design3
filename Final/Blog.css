@@ -40,6 +40,11 @@
     font-family: 'Nunito', sans-serif;
 
 }
+.cart-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
 
 .btn {
     font-family: 'Nunito', sans-serif;

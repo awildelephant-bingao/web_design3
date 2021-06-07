@@ -50,7 +50,11 @@ body {
    font-family: 'Nunito', sans-serif;
     color: #ff94a5;
 }
-
+.cart-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
 
 footer {
     font-size: 12px;

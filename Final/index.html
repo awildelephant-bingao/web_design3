@@ -10,7 +10,6 @@
 
     <title>Hello, world!</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
     <link href="main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
@@ -18,16 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
-</script>
-    
-   
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+
+
 </head>
 
 <body>
@@ -44,21 +43,16 @@
             </button>
             <div class="navigation nav nav-masthead justify-content-around float-md-end collapse navbar-collapse mb-auto"
                 id="navbarSupportedContent">
-
-
-
                 <a class="nav-link sm-h5 banana-pink-color  fw-bold active nunito-font" aria-current="page"
                     href="index.html">Home</a>
                 <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Shopping.html">Product</a>
                 <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="Blog.html">Blog</a>
-
-                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="FAQ.html">FAQ</a>
-                
+                <a class="nav-link sm-h5 banana-pink-color  fw-bold nunito-font" href="test.html">FAQ</a>
                 <div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
-                            class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                    <button type="button" class="btn cart-btn" data-toggle="modal" data-target="#cart">Cart (<span
+                            class="total-count"></span>)</button><button class="clear-cart btn cart-btn">Clear
                         Cart</button></div>
-        
+
             </div>
         </div>
 
@@ -73,9 +67,9 @@
             <div class="content">
                 <div>
                     <h3 class="popuph3">special Offer</h3>
-                <h2>80<sup>%</sup>Off<span></h2>
-                <p class="popupp">All Banana Candy</p>
-                <a href="#" style="margin-top: 1px;">Get The Deal</a>
+                    <h2>80<sup>%</sup>Off<span></h2>
+                    <p class="popupp">All Banana Candy</p>
+                    <a href="#" style="margin-top: 1px;">Get The Deal</a>
                 </div>
             </div>
         </div>
@@ -120,7 +114,7 @@
                         <div class="mb-1 text-muted nunito-font">Nov 11</div>
                         <p class="mb-auto nunito-font">
                             Green bananas may provide some additional nutrients and benefits that yellow bananas do not.
-                           </p>
+                        </p>
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block fresh-banana">
@@ -132,7 +126,7 @@
             </div>
         </div>
 
-        
+
 
 
         <div class="container">
@@ -256,28 +250,28 @@
     </main>
 
     <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <table class="show-cart table">
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
 
-                            </table>
-                            <div>Total price: $<span class="total-cart"></span></div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <a href="checkout.html"><button type="button" class="btn btn-primary">Check Out</button></a>
-                        </div>
-                    </div>
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="checkout.html"><button type="button" class="btn btn-primary">Check Out</button></a>
                 </div>
             </div>
+        </div>
+    </div>
 
 
     <footer class="text-muted py-0">
@@ -302,13 +296,13 @@
     const popup = document.querySelector('.popup');
     const close = document.querySelector('.close');
 
-    window.onload = function(){
-        setTimeout(function(){
+    window.onload = function () {
+        setTimeout(function () {
             popup.style.display = "block"
-        },2000)
+        }, 2000)
     }
 
-    close.addEventListener('click',()=>{
+    close.addEventListener('click', () => {
         popup.style.display = "none";
     })
 </script>

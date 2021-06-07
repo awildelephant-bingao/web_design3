@@ -24,17 +24,19 @@ body {
   .show-cart li {
     display: flex;
   }
+  .cart-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
  
   .card-img-top {
     width: 100%;
     align-self: center;
   }
 
-  .product-background {
-      background-color: lightblue;
-      
-  }
-
+ 
+ 
   .product-row{
     margin-left: 0px;
     margin-right:0px;
@@ -47,3 +49,12 @@ body {
     margin-bottom: 20px;
 }
 
+
+
+@media (min-width: 768px) {
+  .product-row{
+    margin-left: -10px;
+    margin-right:-10px;
+  }
+
+}

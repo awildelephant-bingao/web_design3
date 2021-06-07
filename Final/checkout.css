@@ -12,7 +12,11 @@ body {
 .header-background {
     background-image: url(Images/Header-banana-faq.jpg);
 }
-
+.cart-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
 .banana-yellow-color {
     color: yellow;
 }
