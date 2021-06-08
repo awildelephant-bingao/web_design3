@@ -76,7 +76,7 @@ body {
     width: 300px;
     height: 450px;
     flex-direction: column;
-    background-color: rgb(206, 230, 245);
+    background-color: #7AFDD6;
     border-radius: 20px;
     display: flex;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0, 1);
@@ -211,8 +211,16 @@ footer {
 }
 
 .checkout-button:hover{
-    background-color: lightblue;
+    color:black;
+    background-color:#ff94a5;
+    border-color:#ff94a5;
     
+}
+
+.product-btn:hover{
+    color:black;
+    background-color: #ff94a5;
+    border-color:yellow;
 }
 
 .header-text-banana {
@@ -357,6 +365,11 @@ footer {
 }
 
 
+.pricetag{
+    font-size:20px;
+    color:#ff94a5;
+}
+
 
 @media (min-width: 768px) {
 
@@ -365,7 +378,7 @@ footer {
         position: relative;
         width: 600px;
         height: 400px;
-        background-color: lightyellow;
+        background-color: #7AFDD6;
         border-radius: 20px;
         display: flex;
         flex-direction: row;
@@ -417,6 +430,15 @@ footer {
         margin:0px;
     }
 
+    .youtube-video{
+        margin-bottom:30px;
+        margin-top:30px;
+    }
+
+    .recipts h2{
+        margin-top:20px;
+        margin-bottom:15px;
+    }
 
   
 }
