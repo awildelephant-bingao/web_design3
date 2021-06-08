@@ -7,6 +7,12 @@ body {
   
 }
 
+.product-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
+
 .cart-btn{
     background-color: #ff94a5;
     border-color: yellow;
@@ -14,7 +20,11 @@ body {
 }
 
 .header-background-FAQ {
-    background-image: url(Images/Header-banana-faq.jpg);
+    background-image: url(Images/banana-2-big.gif);
+}
+
+.header-background-product{
+    background-image: url(Images/giphy.gif);
 }
 
 .column-1{
@@ -173,7 +183,6 @@ body {
 footer {
     font-size: 12px;
     margin-top: 100px;
-    margin-bottom: 20px;
 }
 
 

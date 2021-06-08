@@ -6,6 +6,10 @@ body {
     height: 100%; 
 }
 
+.header-background{
+  background-image: url(Images/Banana-product.gif);
+}
+
  .nav-link{
      color:#ff94a5;
  }
@@ -35,12 +39,20 @@ body {
     align-self: center;
   }
 
+  .product-section{
+    margin:-20px;
+}
  
  
-  .product-row{
-    margin-left: 0px;
-    margin-right:0px;
-  }
+
+  .product-btn{
+    background-color: #ff94a5;
+    border-color: yellow;
+    color:yellow;
+}
+.nunito-font {
+  font-family: 'Nunito', sans-serif;
+}
 
 
   footer {
