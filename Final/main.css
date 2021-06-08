@@ -191,6 +191,10 @@ footer {
     background-image: url(Images/giphy-pink.gif);
 }
 
+.header-background-checkout{
+    background-image: url(Images/smoke.gif);
+}
+
 .banana-yellow-color {
     color: yellow;
 }
@@ -198,6 +202,17 @@ footer {
 
 .banana-pink-color {
     color: #ff94a5;
+}
+
+.checkout-button{
+    color: yellow;
+    background-color: #ff94a5;
+    border-color: #ff94a5;
+}
+
+.checkout-button:hover{
+    background-color: lightblue;
+    
 }
 
 .header-text-banana {
